@@ -7,10 +7,10 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "daws66s-state-development"
+    bucket = "daws66s-state-prod"
     key    = "vpc"
     region = "us-east-1"
-    dynamodb_table = "daws66s-locking-development"
+    dynamodb_table = "daws66s-locking-prod"
   }
 }
 
